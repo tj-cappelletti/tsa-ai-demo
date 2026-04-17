@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Air Hockey</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/node_modules/@mediapipe/hands/hands.js"></script>
+    <script src="/node_modules/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="/node_modules/peerjs/dist/peerjs.min.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="hud">
+        <div class="scoreboard">
+          <span id="left-score">0</span>
+          <span>:</span>
+          <span id="right-score">0</span>
+        </div>
+        <div class="controls">
+          <input id="peer-id" type="text" placeholder="Peer ID to join" />
+          <button id="host-btn">Host</button>
+          <button id="join-btn">Join</button>
+        </div>
+        <label class="volume">Music
+          <input id="music-volume" type="range" min="0" max="1" step="0.01" value="0.3" />
+        </label>
+        <p id="status" class="status">Loading…</p>
+      </section>
+      <section class="stage-wrap">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="webcam-overlay"></canvas>
+        <canvas id="game-canvas"></canvas>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
