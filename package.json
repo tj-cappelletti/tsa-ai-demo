@@ -1,0 +1,27 @@
+{
+  "name": "tsa-ai-demo",
+  "version": "1.0.0",
+  "description": "Browser-based neon air-hockey demo using: - **three.js** (WebGL rendering) - **Rapier3D** (physics) - **MediaPipe Hands** (webcam hand tracking) - **PeerJS** (host/join sync)",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "echo \"No automated tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tj-cappelletti/tsa-ai-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tj-cappelletti/tsa-ai-demo/issues"
+  },
+  "homepage": "https://github.com/tj-cappelletti/tsa-ai-demo#readme",
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.19.3",
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "peerjs": "^1.5.5",
+    "three": "^0.184.0"
+  }
+}
