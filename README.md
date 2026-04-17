@@ -9,7 +9,7 @@ Browser-based neon air-hockey demo using:
 ## Run locally
 
 ```bash
-cd /home/runner/work/tsa-ai-demo/tsa-ai-demo
+cd <project-directory>
 npm install
 python3 -m http.server 8080
 ```
